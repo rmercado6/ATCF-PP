@@ -30,31 +30,31 @@
 %                       the general field of study you are considering
 %                       for your review, and name of IRR tutor
 
-\newcommand{\examnumber}{123456789}
-\newcommand{\field}{Whatever I Write About}
-\newcommand{\tutor}{My IRR Tutor}
-\newcommand{\supervisor}{My Project Supervisor}
+\newcommand{\examnumber}{B240451}
+\newcommand{\field}{Large Language Models for Financial Assets Summary}
+\newcommand{\tutor}{Felipe Costa Sperb}
+\newcommand{\supervisor}{Tiejun Ma}
 
 \begin{document}
 \begin{minipage}[b]{110mm}
-        {\Huge\bf School of Informatics
+        {\Huge\textbf School of Informatics
         \vspace*{17mm}}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{40mm}               
         \makebox[40mm]{
-        \includegraphics[width=40mm]{crest.png}}
+        \includegraphics[width=40mm]{crest}}
 \end{minipage}
 \par\noindent
     % Centre Title, and name
 \vspace*{2cm}
 \begin{center}
-        \Large\bf Informatics Project Proposal \\
-        \Large\bf \field
+        \Large\textbf Informatics Project Proposal \\
+        \Large\textbf \field
 \end{center}
 \vspace*{1.5cm}
 \begin{center}
-        \bf \examnumber\\
+        \textbf \examnumber\\
         \monthyeardate\today
 \end{center}
 \vspace*{5mm}
@@ -64,7 +64,7 @@
 %                       
 \begin{abstract}
         The abstract is a short concise outline of your 
-        project proposal, {\bf of no more than around 100 words}.
+        project proposal, \textbf{of no more than around 100 words}.
 \end{abstract}
 
 \vspace*{1cm}
@@ -73,8 +73,8 @@
 Date: \today
 
 \vfill
-{\bf Tutor:} \tutor\\
-{\bf Supervisor:} \supervisor
+{\textbf Tutor:} \tutor\\
+{\textbf Supervisor:} \supervisor
 \newpage
 
 %                                               Through page and setup 
@@ -90,86 +90,47 @@ Date: \today
 %
 
 
-\section{Motivation}
+\section{Motivation}\label{sec:motivation}
+\input{motivation}
 
-Introduce the topic of research and explain its academic and industrial context.
+\section{Background and Related Work}\label{sec:background-and-related-work}
 
-\begin{itemize}
-    \item Establish the general subject area.
-    \item Describe the broad foundations of your study -- provide adequate background for readers.
-    \item Indicate the general scope of your project.
-    \item Provide an overview of the sections that will appear in your proposal (optional).
-    \item Engage the readers.
-\end{itemize}
-
-\subsection{Problem Statement}
-
-\begin{itemize}
-    \item Answer the question:''What is the gap that needs to be filled?"
-    and/or ''What is the problem that needs to be solved?"
-    \item State the problem clearly early in a paragraph.
-    \item Limit the variables you address in stating your problem.
-    \item Consider bordering the problem as a question.
-\end{itemize}
-
-\subsection{Research Hypothesis and Objectives}
-
-Identify the overall aims of the project and the individual measurable objectives against which you would wish the outcome of the work to be assessed. Clearly spell out any research hypothesis you are following.
-
-Include a justification (rationale) for the study. Be clear about what your study will not address.
-
-\subsection{Timeliness and Novelty}
-
-Explain why the proposed research is of sufficient timeliness and novelty
-
-\subsection{Significance}
-
-The proposal should demonstrate the originality of your intended research. You should therefore explain why your research is important (for example, by explaining how your research builds on and adds to the current state of knowledge in the field or by setting out reasons why it is timely to research your proposed topic) and providing details of any immediate applications, including further research that might be done to build on your findings.
-
-\subsection{Feasibility}
-
-Comment on the feasibility of the research plans given its limited time frame and resources. Outline your plans for a feasibility study before starting e.g.\ major implementation work.
-
-\subsection{Beneficiaries}
-
-Describe how the research will benefit other researchers in the field and in related disciplines. What will be done to ensure that they can benefit? 
+Demonstrate a knowledge and understanding of past and current work in the subject area, including relevant references like this~\cite{template}.
 
 
-\section{Background and Related Work}
-
-Demonstrate a knowledge and understanding of past and current work in the subject area, including relevant references like this \cite{template}.
-
-
-\section{Programme and Methodology}
+\section{Programme and Methodology}\label{sec:programme-and-methodology}
 
 \begin{itemize}
     \item Detail the methodology to be used in pursuit of the research and justify this choice.
     \item Describe your contributions and novelty and where you
     will go beyond the state-of-the-art (new methods, new tools,
-    new data, new insights, new proofs,...)
+    new data, new insights, new proofs, \ldots)
     \item Describe the programme of work, indicating the research to be undertaken and the milestones that can be used to measure its progress.
-    \item Where suitable define work packages and define the dependences
-    between these work packages. WPs and their dependences should be
+    \item Where suitable define work packages and define the dependencies
+    between these work packages.
+    WPs and their dependencies should be
     shown in the Gantt chart in the research plan.
     \item Explain how the project will be managed.
     \item State the limitations of your research.
 \end{itemize}
 
-\subsection{Risk Assessment}
+\subsection{Risk Assessment}\label{subsec:risk-assessment}
 
-\subsection{Ethics}
+\subsection{Ethics}\label{subsec:ethics}
 
 
-\section{Evaluation}
+\section{Evaluation}\label{sec:evaluation}
 
 \begin{itemize}
     \item Describe the specific methods of data collection.
-    \item Explain how you intent to analyse and interpret the results.
+    \item Explain how you intend to analyse and interpret the results.
 \end{itemize}
 
-\section{Expected Outcomes}
+\section{Expected Outcomes}\label{sec:expected-outcomes}
 
-Conclude your research proposal by addressing your predicted outcomes. What are you hoping to prove/disprove? Indicate how you envisage your research will contribute to debates and discussions in your particular subject area:
+Conclude your research proposal by addressing your predicted outcomes.
+What are you hoping to prove/disprove?
+Indicate how you envisage your research will contribute to debates and discussions in your particular subject area:
 
 \begin{itemize}
     \item How will your research make an original contribution to knowledge?
@@ -178,7 +139,7 @@ Conclude your research proposal by addressing your predicted outcomes. What are 
 \end{itemize}
 
 
-\section{Research Plan, Milestones and Deliverables}
+\section{Research Plan, Milestones and Deliverables}\label{sec:research-plan-milestones-and-deliverables}
 
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
@@ -245,7 +206,7 @@ Conclude your research proposal by addressing your predicted outcomes. What are 
         \end{tabular} 
     \end{center}
     \caption{Milestones defined in this project.}
-    \label{fig:milestones}
+    \label{tab:milestones}
 \end{table}
 
 \begin{table}[htbp]
@@ -261,7 +222,7 @@ Conclude your research proposal by addressing your predicted outcomes. What are 
         \end{tabular} 
     \end{center}
     \caption{List of deliverables defined in this project.}
-    \label{fig:deliverables}
+    \label{tab:deliverables}
 \end{table}
 
 
@@ -270,8 +231,6 @@ Conclude your research proposal by addressing your predicted outcomes. What are 
 %                This is plain and unsorted, so in the order
 %                they appear in the document.
 
-{\small
-\bibliography{main}       % bib file(s).
-}
+{\small\bibliography{main}}       % bib file(s).
 \end{document}
 
