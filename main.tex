@@ -93,137 +93,25 @@ Date: \today
 \section{Motivation}\label{sec:motivation}
 \input{motivation}
 
-\section{Background and Related Work}\label{sec:background-and-related-work}
 
-Demonstrate a knowledge and understanding of past and current work in the subject area, including relevant references like this~\cite{template}.
+\section{Background and Related Work}\label{sec:background-and-related-work}
+\input{background}
 
 
 \section{Programme and Methodology}\label{sec:programme-and-methodology}
-
-\begin{itemize}
-    \item Detail the methodology to be used in pursuit of the research and justify this choice.
-    \item Describe your contributions and novelty and where you
-    will go beyond the state-of-the-art (new methods, new tools,
-    new data, new insights, new proofs, \ldots)
-    \item Describe the programme of work, indicating the research to be undertaken and the milestones that can be used to measure its progress.
-    \item Where suitable define work packages and define the dependencies
-    between these work packages.
-    WPs and their dependencies should be
-    shown in the Gantt chart in the research plan.
-    \item Explain how the project will be managed.
-    \item State the limitations of your research.
-\end{itemize}
-
-\subsection{Risk Assessment}\label{subsec:risk-assessment}
-
-\subsection{Ethics}\label{subsec:ethics}
+\input{programme-and-methodology}
 
 
 \section{Evaluation}\label{sec:evaluation}
+\input{evaluation}
 
-\begin{itemize}
-    \item Describe the specific methods of data collection.
-    \item Explain how you intend to analyse and interpret the results.
-\end{itemize}
 
 \section{Expected Outcomes}\label{sec:expected-outcomes}
-
-Conclude your research proposal by addressing your predicted outcomes.
-What are you hoping to prove/disprove?
-Indicate how you envisage your research will contribute to debates and discussions in your particular subject area:
-
-\begin{itemize}
-    \item How will your research make an original contribution to knowledge?
-    \item How might it fill gaps in existing work? 
-    \item How might it extend understanding of particular topics?
-\end{itemize}
+\input{expected-outcomes}
 
 
 \section{Research Plan, Milestones and Deliverables}\label{sec:research-plan-milestones-and-deliverables}
-
-\definecolor{barblue}{RGB}{153,204,254}
-\definecolor{groupblue}{RGB}{51,102,254}
-\definecolor{linkred}{RGB}{165,0,33} 
-
-\begin{figure}[htbp]
-\begin{ganttchart}[
-    y unit title=0.4cm,
-    y unit chart=0.5cm,
-    vgrid,hgrid,
-    x unit=1.55mm,
-    time slot format=isodate,
-    title/.append style={draw=none, fill=barblue},
-    title label font=\sffamily\bfseries\color{white},
-    title label node/.append style={below=-1.6ex},
-    title left shift=.05,
-    title right shift=-.05,
-    title height=1,
-    bar/.append style={draw=none, fill=groupblue},
-    bar height=.6,
-    bar label font=\normalsize\color{black!50},
-    group right shift=0,
-    group top shift=.6,
-    group height=.3,
-    group peaks height=.2,
-    bar incomplete/.append style={fill=green}
-   ]{2018-06-01}{2018-08-16}
-   \gantttitlecalendar{month=name}\\
-   \ganttbar[
-    progress=100,
-    bar progress label font=\small\color{barblue},
-    bar progress label node/.append style={right=4pt},
-    bar label font=\normalsize\color{barblue},
-    name=pp
-   ]{Background Reading}{2018-06-01}{2018-06-14} \\
-\ganttset{progress label text={}, link/.style={black, -to}}
-\ganttgroup{Work Package 1}{2018-06-14}{2018-06-30} \\
-\ganttbar[progress=4, name=T1A]{Task A}{2018-06-14}{2018-06-21} \\
-\ganttlinkedbar[progress=0]{Task B}{2018-06-21}{2018-06-30} \\
-\ganttgroup{Work Package 2}{2018-07-01}{2018-07-14} \\
-\ganttbar[progress=15, name=T2A]{Task A}{2018-07-01}{2018-07-07} \\
-\ganttlinkedbar[progress=0]{Task B}{2018-07-07}{2018-07-14} \\
-\ganttgroup{Dissertation}{2018-07-14}{2018-08-16} \\
-  \ganttbar[progress=0]{Task A}{2018-07-14}{2018-08-16}
-  \ganttset{link/.style={green}}
-  \ganttlink[link mid=.4]{pp}{T1A}
-  \ganttlink[link mid=.159]{pp}{T2A}
-\end{ganttchart}
-\caption{Gantt Chart of the activities defined for this project.}
-\label{fig:gantt}
-\end{figure}
-
-\begin{table}[htbp]
-    \begin{center}
-        \begin{tabular}{|c|c|l|}
-        \hline
-        \textbf{Milestone} & \textbf{Week} & \textbf{Description} \\
-        \hline
-        $M_1$ & 2 & Feasibility study completed \\
-        $M_2$ & 5 & First prototype implementation completed \\
-        $M_3$ & 7 & Evaluation completed \\
-        $M_4$ & 10 & Submission of dissertation \\
-        \hline
-        \end{tabular} 
-    \end{center}
-    \caption{Milestones defined in this project.}
-    \label{tab:milestones}
-\end{table}
-
-\begin{table}[htbp]
-    \begin{center}
-        \begin{tabular}{|c|c|l|}
-        \hline
-        \textbf{Deliverable} & \textbf{Week} & \textbf{Description} \\
-        \hline
-        $D_1$ & 6 & Software tool for \dots\\
-        $D_2$ & 8 & Evaluation report on \dots\\
-        $D_3$ & 10 & Dissertation \\
-        \hline
-        \end{tabular} 
-    \end{center}
-    \caption{List of deliverables defined in this project.}
-    \label{tab:deliverables}
-\end{table}
+\input{research-plan-milestones-and-deliverables}
 
 
 %                Now build the reference list

@@ -1,0 +1,84 @@
+
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+
+\begin{figure}[htbp]
+\begin{ganttchart}[
+    y unit title=0.4cm,
+    y unit chart=0.5cm,
+    vgrid,hgrid,
+    x unit=1.55mm,
+    time slot format=isodate,
+    title/.append style={draw=none, fill=barblue},
+    title label font=\sffamily\bfseries\color{white},
+    title label node/.append style={below=-1.6ex},
+    title left shift=.05,
+    title right shift=-.05,
+    title height=1,
+    bar/.append style={draw=none, fill=groupblue},
+    bar height=.6,
+    bar label font=\normalsize\color{black!50},
+    group right shift=0,
+    group top shift=.6,
+    group height=.3,
+    group peaks height=.2,
+    bar incomplete/.append style={fill=green}
+   ]{2018-06-01}{2018-08-16}
+   \gantttitlecalendar{month=name}\\
+   \ganttbar[
+    progress=100,
+    bar progress label font=\small\color{barblue},
+    bar progress label node/.append style={right=4pt},
+    bar label font=\normalsize\color{barblue},
+    name=pp
+   ]{Background Reading}{2018-06-01}{2018-06-14} \\
+\ganttset{progress label text={}, link/.style={black, -to}}
+\ganttgroup{Work Package 1}{2018-06-14}{2018-06-30} \\
+\ganttbar[progress=4, name=T1A]{Task A}{2018-06-14}{2018-06-21} \\
+\ganttlinkedbar[progress=0]{Task B}{2018-06-21}{2018-06-30} \\
+\ganttgroup{Work Package 2}{2018-07-01}{2018-07-14} \\
+\ganttbar[progress=15, name=T2A]{Task A}{2018-07-01}{2018-07-07} \\
+\ganttlinkedbar[progress=0]{Task B}{2018-07-07}{2018-07-14} \\
+\ganttgroup{Dissertation}{2018-07-14}{2018-08-16} \\
+  \ganttbar[progress=0]{Task A}{2018-07-14}{2018-08-16}
+  \ganttset{link/.style={green}}
+  \ganttlink[link mid=.4]{pp}{T1A}
+  \ganttlink[link mid=.159]{pp}{T2A}
+\end{ganttchart}
+\caption{Gantt Chart of the activities defined for this project.}
+\label{fig:gantt}
+\end{figure}
+
+\begin{table}[htbp]
+    \begin{center}
+        \begin{tabular}{|c|c|l|}
+        \hline
+        \textbf{Milestone} & \textbf{Week} & \textbf{Description} \\
+        \hline
+        $M_1$ & 2 & Feasibility study completed \\
+        $M_2$ & 5 & First prototype implementation completed \\
+        $M_3$ & 7 & Evaluation completed \\
+        $M_4$ & 10 & Submission of dissertation \\
+        \hline
+        \end{tabular}
+    \end{center}
+    \caption{Milestones defined in this project.}
+    \label{tab:milestones}
+\end{table}
+
+\begin{table}[htbp]
+    \begin{center}
+        \begin{tabular}{|c|c|l|}
+        \hline
+        \textbf{Deliverable} & \textbf{Week} & \textbf{Description} \\
+        \hline
+        $D_1$ & 6 & Software tool for \dots\\
+        $D_2$ & 8 & Evaluation report on \dots\\
+        $D_3$ & 10 & Dissertation \\
+        \hline
+        \end{tabular}
+    \end{center}
+    \caption{List of deliverables defined in this project.}
+    \label{tab:deliverables}
+\end{table}
