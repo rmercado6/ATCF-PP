@@ -1,4 +1,23 @@
-\begin{itemize}
-    \item Describe the specific methods of data collection.
-    \item Explain how you intend to analyse and interpret the results.
-\end{itemize}
+The project aim to use the FNSPID dataset proposed by ~\cite{Dong2024} which contains information about financial news
+articles.
+The details on this dataset are mentioned in Section 3.
+
+In the case of difficulty to use the FNSPID dataset, the approach proposed by ~\cite{Dong2024} will be leveraged to
+collect the required data.
+The code for this is publicly available in GitHub and it consists of a data scrapper and a datat processor.
+
+To assess the effectiveness of the fine-tuning process, a comparative experiment analyzing the performance of the
+fine-tuned model versus the general model is essential.
+This experiment would involve providing both models with a standardized dataset of unseen financial documents, such as
+company filings or news articles.
+Metrics like ROUGE-1, ROUGE-2, and ROUGE-L will be employed to measure the overlap between the generated summaries and
+human-written reference summaries.
+ROUGE-1 will assess the presence of individual words (unigrams) in both summaries, while ROUGE-2 will delve deeper into
+bigram (two-word phrase) overlap.
+ROUGE-L, on the other hand, will identify the longest sequence of matching words between the generated and reference summaries.
+Additionally, BERTScore will be used to evaluate the semantic similarity between the summaries and the reference documents.
+By comparing the scores achieved by both the fine-tuned and general models across these metrics, we can gain a
+quantitative understanding of the impact of fine-tuning.
+If the fine-tuned model consistently achieves higher ROUGE scores and a better BERTScore, it demonstrates the success of
+the process in specializing the LLM for capturing the nuances of financial documents and generating more accurate and
+relevant summaries.
