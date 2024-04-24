@@ -1,17 +1,57 @@
-\begin{itemize}
-    \item Detail the methodology to be used in pursuit of the research and justify this choice.
-    \item Describe your contributions and novelty and where you
-    will go beyond the state-of-the-art (new methods, new tools,
-    new data, new insights, new proofs, \ldots)
-    \item Describe the programme of work, indicating the research to be undertaken and the milestones that can be used to measure its progress.
-    \item Where suitable define work packages and define the dependencies
-    between these work packages.
-    WPs and their dependencies should be
-    shown in the Gantt chart in the research plan.
-    \item Explain how the project will be managed.
-    \item State the limitations of your research.
-\end{itemize}
+The goals described on Section 1 will be achieved by following three work packages (WP), not including writing: (1) Data
+collection, (2) model fine-tuning, and (3) analysis and evaluation of results.
+These tasks are described in detail in the next paragraphs.
+Deliverables, milestones and a detailed timeline is included in Section 6.
+
+\textbf{Data collection:}
+The proposed research requires the usage of news data.
+Recent interest in LLMs has allowed for the publication of datasets with different focus areas.
+Financial News and Stock Price Integration Dataset (FNSPID) ~\cite{Dong2024} is a dataset built of 29.7 million stock
+prices and 15.7 million time-aligned financial news records for 4,775 S&P500 companies, covering the period from 1999 to
+2023.
+FNSPID is publicly available in Huggingface ~\cite{Dong2024} and it is protected by the Creative Commons
+Attribution-NonCommercial 4.0 International (CC BY-NC-4.0) license, which allows its usage for research purposes.
+
+It is intended to use FNSPID as the primary source of data, but in case any issues surge while leveraging it, the
+approach followed by ~\cite{Dong2024} can be followed in order to build a new dataset that fits the requirements of the
+project.
+
+
+\textbf{Model fine-tuning:}
+Regarding the fine-tuning of the model, it is planned to follow the approach proposed by ~\cite{Avramelou2023} as close
+as possible.
+This project proposes to fine-tune the PEGASUS-XSUM model ~\cite{Zhang2019} by leveraging the FNSPID dataset aiming to
+improve the quality of financial document summarization.
+Pegasus is a general summarization models trained on news articles from BBC and covers a variety of domains, therefore
+fine-tuning it on financial news articles is expected to improve it performance on the summarization of financial documents.
+~\cite{Avramelou2023} proposes a pipeline for fine-tuning PEGASUS-XSUM focusing on cryptocurrency articles while in this
+project the dataset is built on general financial news articles.
+
+
+\textbf{Analysis and Evaluation of Results:}
+A crucial step in evaluating the effectiveness of fine-tuning a language model for financial document summarization
+hinges on a robust evaluation methodology.
+For this, a controlled experiment comparing the original and fine-tuned models on a standardized summarization will be
+executed.
+This task would involve providing both models with a set of unseen financial documents, like company reports or news
+articles.
+However, instead of relying solely on human evaluation, we can leverage established automatic metrics specifically
+designed for this domain.
+
+Metrics like ROUGE-1, ROUGE-2, and ROUGE-L can be employed to assess the overlap between the generated summaries and
+human-written reference summaries.
+ROUGE-1 focuses on unigrams (single words), ROUGE-2 on bigrams (two-word phrases), and ROUGE-L considers the longest
+matching sequence.
+Additionally, BERTScore, which measures semantic similarity between the generated summaries and the reference documents,
+can be used.
+By comparing the scores of the general and fine-tuned models across these metrics, we can gain a quantitative
+understanding of the impact of fine-tuning.
+If the fine-tuned model consistently achieves higher ROUGE scores and a better BERTScore, it demonstrates the success of
+the process in specializing the LLM for capturing the nuances of financial documents.
+This data-driven approach ensures a more objective and replicable evaluation of the fine-tuning process.
+
 
 \subsection{Risk Assessment}\label{subsec:risk-assessment}
+
 
 \subsection{Ethics}\label{subsec:ethics}
