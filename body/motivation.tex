@@ -26,12 +26,9 @@ neat rows and columns like spreadsheets.
 NLP tools can now analyse large amounts of information from social media posts, customer reviews, and even news
 articles, extracting meaning and identifying trends that would be nearly impossible for humans to manage.
 This newfound ability to understand and utilise the information we generate is transforming fields like finance.
-Refer to ~\cite{Lee2024} and ~\cite{Li2023} for recent surveys about LLMs in finance and ~\cite{Zhao2024} for an overview
-of applications and insights into how LLMs are revolutionizing finance.
 
-% TODO: connect ideas between paragraphs.
-% According to
-Large language models (LLMs) offer a revolutionary approach to untangling the complexities of risk management.
+Large language models (LLMs), which are part of the NLP research ares, offer a revolutionary approach to untangling
+the complexities of financial risk management.
 By being adept at processing massive amounts of data, LLMs can delve into financial reports, news streams, and social
 media chatter, summarizing the key points and identifying trends that might otherwise be lost in the information
 overload.
@@ -39,41 +36,15 @@ This document summarization capability empowers businesses to gain a clearer und
 internal and external.
 By analysing vast datasets and highlighting crucial details, LLMs can act as a powerful tool for risk identification,
 paving the way for more proactive and effective risk mitigation strategies.
+Refer to ~\cite{Lee2024} and ~\cite{Li2023} for recent surveys about LLMs in finance and ~\cite{Zhao2024} for an overview
+of applications and insights into how LLMs are revolutionizing finance.
 
-
-% ChatGPT and Large Language Models for Financial Assets Summary
-% Principal Goal: The aim of this project is to explore adopting LLMs and ChatGPT for summarising firms financial
-% fundamentals and assessing the prediction power of such summaries.
-%
-% A survey of more than 1,000 financial industry professionals indicate that it is challenging to recognize and
-% understand major risks factors associated with firms and market dynamics and manually process such information
-% is a significant challenge itself. Recent AI-driven LLMs provide revolutionary solutions to address such challenges,
-% we aim to leverage bespoke finance LLMs with vast amount of online information and financial report data to enhance
-% abrdn’s investment management process.  However, currently, large language models such as GPT-4, lack firm specific
-% financial information and counting for firms’ relationships and sector based real-time summarization capability,
-% which is a clear shortcoming for financial the financial industry who needs reliable risk factors analysis in
-% real-time.  We aim to quantify firm fundamental information, and market news (positive, or negative) related to
-% multiple dimensions of firms from global news archives over the last 20 years that can be traced to a particular
-% country, sectors with focus on fixed income and equity markets.  This project aims to explore firm-based - risk
-% factors are measured, hence unlocking the potential for significant improvements in the fields of finance investment
-% management, and decision-making.
-%
-% The main focuses of this project are (i) develop financial documents summarization based on existing pretrained
-% LLM models, which has the capability of providing essential summaries of firms historical and fundamental
-% information. The project will explore the summarizes of (a) firms’ business activities, earnings; (b) growth
-% potentials, key revenue drivers and industry recommendations etc;
-
+This document describes the proposal of a research project that aims to analyze the impact that fine-tuning LLMs with
+domain specific information, specifically financial information, can have over the performance of such models in the
+financial document summarization task.
 
 % -------------------------------------------------------------------------------------------------------------------
 \subsection{Problem Statement}\label{subsec:problem-statement}
-
-%\begin{itemize}
-%    \item Answer the question: "What is the gap that needs to be filled?"
-%    and/or "What is the problem that needs to be solved?"
-%    \item State the problem clearly early in a paragraph.
-%    \item Limit the variables you address in stating your problem.
-%    \item Consider bordering the problem as a question.
-%\end{itemize}
 
 Large Language Models (LLMs) excel at processing large amounts of text data, but their applications are currently
 limited when aiming for domain-specific problems, such as financial data processing.
@@ -99,13 +70,6 @@ after fine-tuning using financial news data?
 % -------------------------------------------------------------------------------------------------------------------
 \subsection{Research Hypothesis and Objectives}\label{subsec:research-hypothesis-and-objectives}
 
-%Identify the overall aims of the project and the individual measurable objectives against which you would
-%wish the outcome of the work to be assessed.
-%Clearly spell out any research hypothesis you are following.
-%
-%Include a justification (rationale) for the study.
-%Be clear about what your study will not address.
-
 This project aims to develop financial document summarization based on pretrained LLMs by fine-tuning using financial news
 data.
 The research hypothesis explored in this project is that the fine-tuned model will be able to summarize financial
@@ -114,10 +78,6 @@ performance than that of the current state of the art LLMs.
 
 % -------------------------------------------------------------------------------------------------------------------
 \subsection{Timeliness and Novelty}\label{subsec:timeliness-and-novelty}
-
-%Explain why the proposed research is of sufficient timeliness and novelty
-
-% research gap
 
 Financial documents, packed with technical jargon and dense details, are notoriously time-consuming to analyse.
 This presents a hurdle for busy professionals like analysts and investors who need to swiftly grasp a company's
@@ -132,12 +92,6 @@ strategic investment choices.
 
 % -------------------------------------------------------------------------------------------------------------------
 \subsection{Significance}\label{subsec:significance}
-
-%The proposal should demonstrate the originality of your intended research.
-%You should therefore explain why your research is important
-%(for example, by explaining how your research builds on and adds to the current state of knowledge in the field or
-%by setting out reasons why it is timely to research your proposed topic) and providing details of any
-%immediate applications, including further research that might be done to build on your findings.
 
 The research proposed by this project aims for a holistic understanding of financial risk.
 While traditional summarization tools might capture the gist of individual documents, they often fall short of
@@ -154,9 +108,6 @@ analyse data, ultimately leading to a more informed and efficient financial mark
 % -------------------------------------------------------------------------------------------------------------------
 \subsection{Feasibility}\label{subsec:feasibility}
 
-%Comment on the feasibility of the research plans given its limited time frame and resources.
-%Outline your plans for a feasibility study before starting e.g.\ major implementation work.
-
 This project shows strong promise for feasibility.
 The data required to fine-tune the LLM, namely news articles, can be obtained through services to which the school
 provide access.
@@ -169,9 +120,6 @@ ensuring the overall feasibility of the project.
 
 % -------------------------------------------------------------------------------------------------------------------
 \subsection{Beneficiaries}\label{subsec:beneficiaries}
-
-%Describe how the research will benefit other researchers in the field and in related disciplines.
-%What will be done to ensure that they can benefit?
 
 The outcomes of this project will benefit the research area of financial document summarization by concluding if
 fine-tuning LLMs on financial data has a positive or negative impact on their performance at summarizing financial
@@ -190,6 +138,3 @@ How can these LLMs be further refined to not only summarize individual documents
 potential risks across entire industries?
 Could similar techniques be applied to other complex text domains?
 These are just a few examples of the potential inquiries that this research project could open.
-
-
-
