@@ -1,15 +1,15 @@
-Introduce the topic of research and explain its academic and industrial context.
-
-\begin{itemize}
-    \item Establish the general subject area.
-    \item Describe the broad foundations of your study -- provide adequate background for readers.
-    \item Indicate the general scope of your project.
-    \item Provide an overview of the sections that will appear in your proposal (optional).
-    \item Engage the readers.
-\end{itemize}
+%Introduce the topic of research and explain its academic and industrial context.
+%
+%\begin{itemize}
+%    \item Establish the general subject area.
+%    \item Describe the broad foundations of your study -- provide adequate background for readers.
+%    \item Indicate the general scope of your project.
+%    \item Provide an overview of the sections that will appear in your proposal (optional).
+%    \item Engage the readers.
+%\end{itemize}
 
 % -------------------------------------------------------------------------------------------------------------------
-
+% TODO: Comeback and finish intro
 Pinpointing risk factors for firms and market dynamics is a multifaceted challenge.
 Internal company data on operations can become entangled with external forces like economic shifts, making it difficult
 to untangle the source of issues.
@@ -29,6 +29,8 @@ This newfound ability to understand and utilise the information we generate is t
 Refer to ~\cite{Lee2024} and ~\cite{Li2023} for recent surveys about LLMs in finance and ~\cite{Zhao2024} for an overview
 of applications and insights into how LLMs are revolutionizing finance.
 
+% TODO: connect ideas between paragraphs.
+% According to
 Large language models (LLMs) offer a revolutionary approach to untangling the complexities of risk management.
 By being adept at processing massive amounts of data, LLMs can delve into financial reports, news streams, and social
 media chatter, summarizing the key points and identifying trends that might otherwise be lost in the information
@@ -65,42 +67,128 @@ paving the way for more proactive and effective risk mitigation strategies.
 % -------------------------------------------------------------------------------------------------------------------
 \subsection{Problem Statement}\label{subsec:problem-statement}
 
-\begin{itemize}
-    \item Answer the question: "What is the gap that needs to be filled?"
-    and/or "What is the problem that needs to be solved?"
-    \item State the problem clearly early in a paragraph.
-    \item Limit the variables you address in stating your problem.
-    \item Consider bordering the problem as a question.
-\end{itemize}
+%\begin{itemize}
+%    \item Answer the question: "What is the gap that needs to be filled?"
+%    and/or "What is the problem that needs to be solved?"
+%    \item State the problem clearly early in a paragraph.
+%    \item Limit the variables you address in stating your problem.
+%    \item Consider bordering the problem as a question.
+%\end{itemize}
 
+Large Language Models (LLMs) excel at processing large amounts of text data, but their applications are currently
+limited when aiming for domain-specific problems, such as financial data processing.
+This limitation lies in their limited access to domain-specific information.
+
+Public financial reports offer some insights, but LLMs can't currently grasp the intricacies hidden within a company's
+internal data.
+This is where financial news data steps in as a potential solution.
+By leveraging news articles, press releases, and analyst reports, LLMs can glean valuable details about a firm's
+financial health, mergers and acquisitions, and potential controversies.
+This financial news data, though not a replacement for private information, can help LLMs understand the external
+narrative surrounding a company and identify potential risks that public filings alone might miss.
+By incorporating financial news analysis alongside traditional data sources, LLMs can paint a more comprehensive
+picture of a firm's financial landscape, ultimately leading to more robust risk assessments.
+
+Text summarization is one of the tasks that LLMs are capable of achieving.
+Its goal is to generate a concise summary of documents while conveying its key information.
+According to ~\cite{Lee2024}, this field has been relatively underexplored due to multiple reasons, such as the lack of
+benchmark datasets and challenges with domain experts' evaluations.
+This research aims to answer the following question: How does the summarization task performance of an LLM improve
+after fine-tuning using financial news data?
+
+% -------------------------------------------------------------------------------------------------------------------
 \subsection{Research Hypothesis and Objectives}\label{subsec:research-hypothesis-and-objectives}
 
-Identify the overall aims of the project and the individual measurable objectives against which you would
-wish the outcome of the work to be assessed.
-Clearly spell out any research hypothesis you are following.
+%Identify the overall aims of the project and the individual measurable objectives against which you would
+%wish the outcome of the work to be assessed.
+%Clearly spell out any research hypothesis you are following.
+%
+%Include a justification (rationale) for the study.
+%Be clear about what your study will not address.
 
-Include a justification (rationale) for the study.
-Be clear about what your study will not address.
+This project aims to develop financial document summarization based on pretrained LLMs by fine-tuning using financial news
+data.
+The research hypothesis explored in this project is that the fine-tuned model will be able to summarize financial
+documents considering historical and fundamental information relevant to the related firm, resulting in better
+performance than that of the current state of the art LLMs.
 
-
+% -------------------------------------------------------------------------------------------------------------------
 \subsection{Timeliness and Novelty}\label{subsec:timeliness-and-novelty}
 
-Explain why the proposed research is of sufficient timeliness and novelty
+%Explain why the proposed research is of sufficient timeliness and novelty
 
+% research gap
+
+Financial documents, packed with technical jargon and dense details, are notoriously time-consuming to analyse.
+This presents a hurdle for busy professionals like analysts and investors who need to swiftly grasp a company's
+financial health.
+Research in LLM-based summarization tackles this challenge head-on.
+By enabling the creation of concise summaries highlighting key metrics like revenue growth, profitability, and debt
+levels, LLMs empower faster and more informed decision-making.
+Training LLMs on vast datasets encompassing financial reports, news articles, and analyst insights allows them to not
+just summarize individual documents but also identify industry-wide trends and potential risks.
+This comprehensive analysis equips users with a deeper understanding of the financial landscape, ultimately fostering
+strategic investment choices.
+
+% -------------------------------------------------------------------------------------------------------------------
 \subsection{Significance}\label{subsec:significance}
 
-The proposal should demonstrate the originality of your intended research.
-You should therefore explain why your research is important
-(for example, by explaining how your research builds on and adds to the current state of knowledge in the field or
-by setting out reasons why it is timely to research your proposed topic) and providing details of any
-immediate applications, including further research that might be done to build on your findings.
+%The proposal should demonstrate the originality of your intended research.
+%You should therefore explain why your research is important
+%(for example, by explaining how your research builds on and adds to the current state of knowledge in the field or
+%by setting out reasons why it is timely to research your proposed topic) and providing details of any
+%immediate applications, including further research that might be done to build on your findings.
 
+The research proposed by this project aims for a holistic understanding of financial risk.
+While traditional summarization tools might capture the gist of individual documents, they often fall short of
+identifying broader trends and potential risks across an entire industry.
+LLM research in financial document summarization aims to bridge this gap.
+By training LLMs on vast datasets encompassing diverse financial documents, researchers can equip them to not only
+summarize individual documents but also identify patterns and potential risks within a specific sector.
+This comprehensive analysis allows users to gain a deeper understanding of the financial landscape, anticipate
+potential market shifts, and make strategic investment choices that take into account both individual company health
+and broader industry trends.
+In essence, research in LLM-based summarization holds the potential to revolutionize the way financial professionals
+analyse data, ultimately leading to a more informed and efficient financial market.
+
+% -------------------------------------------------------------------------------------------------------------------
 \subsection{Feasibility}\label{subsec:feasibility}
 
-Comment on the feasibility of the research plans given its limited time frame and resources.
-Outline your plans for a feasibility study before starting e.g.\ major implementation work.
+%Comment on the feasibility of the research plans given its limited time frame and resources.
+%Outline your plans for a feasibility study before starting e.g.\ major implementation work.
 
+This project shows strong promise for feasibility.
+The data required to fine-tune the LLM, namely news articles, is owned by the school and can be used for this project.
+Additionally, fine-tuning a large language model can be automated through scripting, and streamlining development.
+However, a significant hurdle exists in the computational resources needed.
+Training LLMs often require significant processing power and specialized hardware, which can be expensive and limited in
+availability.
+Finding a solution to this, perhaps through cloud computing or the school’s computing resources, would be key to
+ensuring the overall feasibility of the project.
+
+% -------------------------------------------------------------------------------------------------------------------
 \subsection{Beneficiaries}\label{subsec:beneficiaries}
 
-Describe how the research will benefit other researchers in the field and in related disciplines.
-What will be done to ensure that they can benefit?
+%Describe how the research will benefit other researchers in the field and in related disciplines.
+%What will be done to ensure that they can benefit?
+
+The outcomes of this project will benefit the research area of financial document summarization by concluding if
+fine-tuning LLMs on financial data has a positive or negative impact on their performance at summarizing financial
+documents.
+This might lead to the development of finance domain-specific LLMs which Financial analysts would benefit from.
+These LLMs might result in assisting tools that would help them filter large amounts of data with newfound efficiency.
+Similarly, financial institutions could streamline critical tasks, leading to better resource allocation and potentially
+improved risk management strategies.
+
+On the other hand, the LLM's performance on financial document summarization tasks would establish a valuable benchmark
+for future research.
+The evaluation metrics and the LLM itself would provide a reference point for researchers to compare different
+summarization techniques and track advancements in the field.
+The success of this LLM system would undoubtedly spark a new wave of research questions.
+How can these LLMs be further refined to not only summarize individual documents but also identify broader trends and
+potential risks across entire industries?
+Could similar techniques be applied to other complex text domains?
+These are just a few examples of the potential inquiries that this research project could open.
+
+
+
