@@ -51,3 +51,62 @@
    title = {Domain-Specific Large Language Model Finetuning using a Model Assistant for Financial Text Summarization},
    year = {2023},
 }
+@inproceedings{El-Haj,
+   author = {Mahmoud El-Haj},
+   doi = {10.26615/978-954-452-058-8_002},
+   isbn = {9789544520588},
+   journal = {Proceedings of the Workshop MultiLing 2019: Summarization Across Languages, Genres and Sources associated with RANLP 2019},
+   month = {12},
+   pages = {6-10},
+   publisher = {Incoma Ltd., Shoumen, Bulgaria},
+   title = {MultiLing 2019: Financial Narrative Summarisation},
+   year = {2019},
+}
+@article{Sharma2023,
+   abstract = {Relation extraction models trained on a source domain cannot be applied on a different target domain due to the mismatch between relation sets. In the current literature, there is no extensive open-source relation extraction dataset specific to the finance domain. In this paper, we release FinRED, a relation extraction dataset curated from financial news and earning call transcripts containing relations from the finance domain. FinRED has been created by mapping Wikidata triplets using distance supervision method. We manually annotate the test data to ensure proper evaluation. We also experiment with various state-of-the-art relation extraction models on this dataset to create the benchmark. We see a significant drop in their performance on FinRED compared to the general relation extraction datasets which tells that we need better models for financial relation extraction.},
+   author = {Soumya Sharma and Tapas Nayak and Arusarka Bose and Ajay Kumar Meena and Koustuv Dasgupta and Niloy Ganguly and Pawan Goyal},
+   month = {6},
+   title = {FinRED: A Dataset for Relation Extraction in Financial Domain},
+   year = {2023},
+}
+@article{Wu2023,
+   abstract = {The use of NLP in the realm of financial technology is broad and complex, with applications ranging from sentiment analysis and named entity recognition to question answering. Large Language Models (LLMs) have been shown to be effective on a variety of tasks; however, no LLM specialized for the financial domain has been reported in literature. In this work, we present BloombergGPT, a 50 billion parameter language model that is trained on a wide range of financial data. We construct a 363 billion token dataset based on Bloomberg's extensive data sources, perhaps the largest domain-specific dataset yet, augmented with 345 billion tokens from general purpose datasets. We validate BloombergGPT on standard LLM benchmarks, open financial benchmarks, and a suite of internal benchmarks that most accurately reflect our intended usage. Our mixed dataset training leads to a model that outperforms existing models on financial tasks by significant margins without sacrificing performance on general LLM benchmarks. Additionally, we explain our modeling choices, training process, and evaluation methodology. We release Training Chronicles (Appendix C) detailing our experience in training BloombergGPT.},
+   author = {Shijie Wu and Ozan Irsoy and Steven Lu and Vadim Dabravolski and Mark Dredze and Sebastian Gehrmann and Prabhanjan Kambadur and David Rosenberg and Gideon Mann},
+   month = {3},
+   title = {BloombergGPT: A Large Language Model for Finance},
+   year = {2023},
+}
+@article{Zaheer2020,
+   abstract = {Transformers-based models, such as BERT, have been one of the most successful deep learning models for NLP. Unfortunately, one of their core limitations is the quadratic dependency (mainly in terms of memory) on the sequence length due to their full attention mechanism. To remedy this, we propose, BigBird, a sparse attention mechanism that reduces this quadratic dependency to linear. We show that BigBird is a universal approximator of sequence functions and is Turing complete, thereby preserving these properties of the quadratic, full attention model. Along the way, our theoretical analysis reveals some of the benefits of having $O(1)$ global tokens (such as CLS), that attend to the entire sequence as part of the sparse attention mechanism. The proposed sparse attention can handle sequences of length up to 8x of what was previously possible using similar hardware. As a consequence of the capability to handle longer context, BigBird drastically improves performance on various NLP tasks such as question answering and summarization. We also propose novel applications to genomics data.},
+   author = {Manzil Zaheer and Guru Guruganesh and Avinava Dubey and Joshua Ainslie and Chris Alberti and Santiago Ontanon and Philip Pham and Anirudh Ravula and Qifan Wang and Li Yang and Amr Ahmed},
+   month = {7},
+   title = {Big Bird: Transformers for Longer Sequences},
+   year = {2020},
+}
+@article{Jin2024,
+   abstract = {Automatic Text Summarization (ATS), utilizing Natural Language Processing (NLP) algorithms, aims to create concise and accurate summaries, thereby significantly reducing the human effort required in processing large volumes of text. ATS has drawn considerable interest in both academic and industrial circles. Many studies have been conducted in the past to survey ATS methods; however, they generally lack practicality for real-world implementations, as they often categorize previous methods from a theoretical standpoint. Moreover, the advent of Large Language Models (LLMs) has altered conventional ATS methods. In this survey, we aim to 1) provide a comprehensive overview of ATS from a ``Process-Oriented Schema'' perspective, which is best aligned with real-world implementations; 2) comprehensively review the latest LLM-based ATS works; and 3) deliver an up-to-date survey of ATS, bridging the two-year gap in the literature. To the best of our knowledge, this is the first survey to specifically investigate LLM-based ATS methods.},
+   author = {Hanlei Jin and Yang Zhang and Dan Meng and Jun Wang and Jinghua Tan},
+   month = {3},
+   title = {A Comprehensive Survey on Process-Oriented Automatic Text Summarization with Exploration of LLM-Based Methods},
+   year = {2024},
+}
+@inproceedings{passali-etal-2021-towards,
+    title = "Towards Human-Centered Summarization: A Case Study on Financial News",
+    author = "Passali, Tatiana  and
+      Gidiotis, Alexios  and
+      Chatzikyriakidis, Efstathios  and
+      Tsoumakas, Grigorios",
+    editor = "Blodgett, Su Lin  and
+      Madaio, Michael  and
+      O'Connor, Brendan  and
+      Wallach, Hanna  and
+      Yang, Qian",
+    booktitle = "Proceedings of the First Workshop on Bridging Human{--}Computer Interaction and Natural Language Processing",
+    month = apr,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.hcinlp-1.4",
+    pages = "21--27",
+    abstract = "Recent Deep Learning (DL) summarization models greatly outperform traditional summarization methodologies, generating high-quality summaries. Despite their success, there are still important open issues, such as the limited engagement and trust of users in the whole process. In order to overcome these issues, we reconsider the task of summarization from a human-centered perspective. We propose to integrate a user interface with an underlying DL model, instead of tackling summarization as an isolated task from the end user. We present a novel system, where the user can actively participate in the whole summarization process. We also enable the user to gather insights into the causative factors that drive the model{'}s behavior, exploiting the self-attention mechanism. We focus on the financial domain, in order to demonstrate the efficiency of generic DL models for domain-specific applications. Our work takes a first step towards a model-interface co-design approach, where DL models evolve along user needs, paving the way towards human-computer text summarization interfaces.",
+}
